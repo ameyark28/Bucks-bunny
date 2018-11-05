@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyAccount">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="347dp"
+        android:layout_height="42dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="166dp"
+        android:text=" Name:User    Account Created on:26-04- 2018"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="196dp"
+        android:layout_height="116dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:src="@mipmap/ic_person_black_24dp" />
+
+    <Button
+        android:id="@+id/addexp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Add Expense" />
+
+    <Button
+        android:id="@+id/history"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addexp"
+        android:layout_centerHorizontal="true"
+        android:text="Show history" />
+
+    <ListView
+        android:id="@+id/listdata"
+        android:layout_width="wrap_content"
+        android:layout_height="98dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="14dp"></ListView>
+    <ScrollView
+        android:id="@+id/scrollList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </ScrollView>
+
+    <Button
+        android:id="@+id/ExpenseSheet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/history"
+        android:layout_centerHorizontal="true"
+        android:text="Genrate Expense sheet" />
+
+
+</RelativeLayout>
